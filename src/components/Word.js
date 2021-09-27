@@ -1,20 +1,17 @@
 import React from "react";
+import Audio from "./Audio";
 import Container from "./Container";
 
-class Word extends React.Component {
-  state = { words: [] };
-
-  render() {
-    return (
-      <div>
-        <Container>
-          <div>{this.props.word}</div>
-          <i className="volume up icon"></i>
-          <div>{this.props.definition}</div>
-        </Container>
-      </div>
-    );
-  }
-}
+const Word = (props) => {
+  return (
+    <div>
+      <Container>
+        <div>{props.word}</div>
+        <Audio sound={props.sound} />
+        <div>{props.definition}</div>
+      </Container>
+    </div>
+  );
+};
 
 export default Word;

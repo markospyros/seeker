@@ -35,6 +35,7 @@ class App extends React.Component {
             <Word
               word={item.word}
               definition={item.meanings[0].definitions[0].definition}
+              sound={item.phonetics[0].audio}
             />
           </div>
         ))}
