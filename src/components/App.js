@@ -8,8 +8,6 @@ class App extends React.Component {
 
   onInputChange = (event) => {
     this.setState({ term: event.target.value });
-
-    console.log(this.state.term);
   };
 
   onSearchSubmit = (event) => {
@@ -18,7 +16,6 @@ class App extends React.Component {
       .then((res) => {
         const words = res.data;
         this.setState({ words });
-        console.log(words);
       });
     event.preventDefault();
   };
