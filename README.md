@@ -1,1 +1,1 @@
-
+Seeker is a basic dictionary tool designed to help you quickly search for words and hear their pronunciation. With a user-friendly interface and simple search functionality, Seeker makes it easy to find the definitions and audio pronunciations of words. Whether you're a student, professional, or simply curious,
